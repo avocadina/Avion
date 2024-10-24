@@ -1,0 +1,106 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    padding: 16px 32px;
+    max-width: 342px;
+    max-height: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    transition: var(--main-trs);
+}
+
+.btn--active::after {
+    content: 'Кнопки не работают. Нажми обратно её';
+    
+}
+
+.btn--with-icon {
+    gap: 12px;
+}
+
+.btn--with-icon svg {
+    transition: transform 0.3s ease;
+}
+
+.btn--theme-dark {
+    color: var(--white);
+    background-color: rgba(249, 249, 249, 0.15);
+}
+
+.btn--theme-darker {
+    color: var(--white);
+    background-color: var(--dark-primary);
+}
+
+.btn--theme-light {
+    color: var(--dark-primary);
+    background-color: var(--light-grey);
+}
+
+.btn--theme-lighter {
+    color: var(--dark-primary);
+    background-color: var(--white);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:focus-visible {
+    outline: 2px dashed var(--dark-primary);
+    outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+    .btn--theme-dark:hover {
+        color: var(--dark-primary);
+        background-color: var(--light-grey);
+    }
+}
+
+.btn--theme-dark:active {
+    color: var(--white);
+    background-color: var(--dark-primary);
+}
+
+@media (any-hover: hover) {
+    .btn--theme-light:hover {
+        color: var(--white);
+        background-color: var(--primary);
+    }
+}
+
+.btn--theme-light:active {
+    color: var(--white);
+    background-color: var(--dark-primary);
+}
+
+@media (any-hover: hover) {
+    .btn--theme-darker:hover {
+        color: var(--white);
+        background-color: var(--primary);
+    }
+}
+
+.btn--theme-darker:active {
+    color: var(--dark-primary);
+    background-color: var(--light-grey);
+}
+
+@media (any-hover: hover) {
+    .btn--theme-lighter:hover {
+        color: var(--white);
+        background-color: var(--primary);
+    }
+}
+
+.btn--theme-lighter:active {
+    color: var(--white);
+    background-color: var(--dark-primary);
+}

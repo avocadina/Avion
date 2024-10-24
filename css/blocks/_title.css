@@ -1,0 +1,40 @@
+.title {
+    margin: 0;
+    font-family: var(--second-family);
+    color: var(--dark-primary);
+}
+
+.title--small {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.title--large {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+}
+
+.title--large-xl {
+    font-size: 36px;
+}
+
+.title--centered {
+    text-align: center;
+}
+
+.title--mb-large {
+    margin-bottom: 50px;
+}
+
+.title--mb-small {
+    margin-bottom: 32px;
+}
+.title--mb-small-xs {
+    margin-bottom: 12px;
+}
+
+.title--mb-medium {
+    margin-bottom: 25px;
+}

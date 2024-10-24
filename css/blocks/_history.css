@@ -1,0 +1,49 @@
+.history {
+    padding: 60px 0;
+}
+
+.history__content {
+    display: flex;
+    gap: 16px;
+}
+
+.history__text,
+.history__image {
+    width: calc((100% - 16px) / 2);
+}
+
+.history__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px;
+    padding-bottom: 54px;
+    padding-right: 75px;
+    color: var(--white);
+    background: var(--dark-primary);
+}
+
+.history__btn {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.history__title {
+    line-height: 140%;
+    color: var(--white);
+}
+
+.history__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.history__pic {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
