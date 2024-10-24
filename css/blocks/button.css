@@ -15,10 +15,6 @@
     transition: var(--main-trs);
 }
 
-.btn--active::after {
-    content: 'Кнопки не работают. Нажми обратно её';
-    
-}
 
 .btn--with-icon {
     gap: 12px;
